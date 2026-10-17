@@ -14,19 +14,19 @@ function TodoForm({ addTodo }) {
 
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-md">
-      <div className="flex gap-3">
+      <div className="flex gap-2">
         <input
           type="text"
-          placeholder="What needs to be done?"
+          placeholder="✨ What amazing task shall we add?"
           value={text}
           onChange={(e) => setText(e.target.value)}
-          className="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent backdrop-blur-sm"
+          className="flex-1 min-w-0 px-4 py-3 bg-gradient-to-r from-white/20 to-white/10 border-2 border-white/30 rounded-2xl text-white placeholder-white focus:outline-none focus:ring-4 focus:ring-yellow-400/50 focus:border-yellow-400 backdrop-blur-sm text-base font-medium shadow-lg"
         />
         <button
           type="submit"
-          className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-xl hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 font-medium"
+          className="px-5 py-3 bg-[#D527B7] text-white rounded-2xl hover:bg-[#bd1f9f] transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 font-bold text-base border-2 border-white/20"
         >
-          Add Task
+          🚀 Add
         </button>
       </div>
     </form>

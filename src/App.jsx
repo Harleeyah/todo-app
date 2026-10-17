@@ -25,23 +25,17 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 flex items-center justify-center p-4 relative overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl animate-float"></div>
-        <div className="absolute top-3/4 right-1/4 w-64 h-64 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-1/4 left-1/2 w-64 h-64 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '2s' }}></div>
-      </div>
-      <div className="w-full max-w-lg bg-white/10 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/20 p-8 animate-fade-in relative z-10">
+    <div className="min-h-screen bg-gradient-to-br from-[#3b0b60] via-[#2b0845] to-[#1d0630] flex items-center justify-center p-4 relative overflow-hidden text-white">
+      <div className="w-full max-w-[600px] backdrop-blur-2xl rounded-3xl shadow-2xl border border-white/40 p-10 animate-fade-in relative z-10 mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-white mb-2 tracking-tight bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
-            ✨ My Tasks
+          <h1 className="text-5xl font-bold text-white mb-3 tracking-tight drop-shadow-lg">
+            🌈 My Amazing Tasks
           </h1>
-          <p className="text-white/70 text-sm">
-            Stay organized, stay productive
+          <p className="text-white text-lg font-medium mb-6">
+            Let's get things done! ✨
           </p>
         </div>
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center mb-4">
           <TodoForm addTodo={addTodo} />
         </div>
         <div className="flex justify-center">
